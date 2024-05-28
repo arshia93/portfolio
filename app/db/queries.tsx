@@ -21,32 +21,43 @@ let yt = youtube({
 });
 
 export async function getBlogViews() {
-  if (!process.env.POSTGRES_URL) {
-    return [];
-  }
-
-  noStore();
-  let views = await sql`
-    SELECT count
-    FROM views
-  `;
-
-  return views.reduce((acc, curr) => acc + Number(curr.count), 0);
+  return [];
 }
 
-export async function getViewsCount(): Promise<
-  { slug: string; count: number }[]
-> {
-  if (!process.env.POSTGRES_URL) {
-    return [];
-  }
-
-  noStore();
-  return sql`
-    SELECT slug, count
-    FROM views
-  `;
+export async function getViewsCount(): Promise<{ slug: string; count: number }[]> {
+  return [];
 }
+
+
+// I'LL SET THIS UP WHEN I SETUP MY DATABASE
+// export async function getBlogViews() {
+//   if (!process.env.POSTGRES_URL) {
+//     return [];
+//   }
+
+//   noStore();
+//   let views = await sql`
+//     SELECT count
+//     FROM views
+//   `;
+
+//   return views.reduce((acc, curr) => acc + Number(curr.count), 0);
+// }
+
+// I'LL SET THIS UP WHEN I SETUP MY DATABASE
+// export async function getViewsCount(): Promise<
+//   { slug: string; count: number }[]
+// > {
+//   if (!process.env.POSTGRES_URL) {
+//     return [];
+//   }
+
+//   noStore();
+//   return sql`
+//     SELECT slug, count
+//     FROM views
+//   `;
+// }
 
 export const getLeeYouTubeSubs = cache(
   async () => {

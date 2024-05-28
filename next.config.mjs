@@ -19,10 +19,12 @@ const nextConfig = {
       return [];
     }
 
-    let redirects = await sql`
-      SELECT source, destination, permanent
-      FROM redirects;
-    `;
+    let redirects = [];
+    // I'LL SET THIS UP WHEN I SETUP MY DATABASE
+    // let redirects = await sql`
+    //   SELECT source, destination, permanent
+    //   FROM redirects;
+    // `;
 
     return redirects.map(({ source, destination, permanent }) => ({
       source,

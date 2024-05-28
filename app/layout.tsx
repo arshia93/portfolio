@@ -8,17 +8,17 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://arshia.io'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Arshia Moghaddam',
+    template: '%s | Arshia Moghaddam',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Creator, explorer, dreamer.',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    title: 'Arshia Moghaddam',
+    description: 'Creator, explorer, dreamer.',
+    url: 'https://arshia.io',
+    siteName: 'Arshia Moghaddam',
     locale: 'en_US',
     type: 'website',
   },
@@ -34,12 +34,8 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Arshia Moghaddam',
     card: 'summary_large_image',
-  },
-  verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
   },
 };
 
