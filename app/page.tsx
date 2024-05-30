@@ -11,6 +11,7 @@ export default function Page() {
       />
     );
   }
+
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
@@ -90,7 +91,7 @@ export default function Page() {
           , scratchpad, and outdoorsy.
         </li>
       </ul>
-      <ul className="font-sm mt-8 flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-4 md:space-y-0 text-neutral-600 dark:text-neutral-200 ">
+      {/* <ul className="font-sm mt-8 flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-4 md:space-y-0 text-neutral-600 dark:text-neutral-200 ">
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
@@ -122,7 +123,7 @@ export default function Page() {
           </a>
         </li>
       </ul>
-      {/* Built with coffee in SF/SD  */}
+      Built with coffee in SF/SD  */}
     </section>
   );
 }

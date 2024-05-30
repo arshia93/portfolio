@@ -6,6 +6,7 @@ import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
+import { Footer } from './components/footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://arshia.io'),
@@ -62,6 +63,7 @@ export default function RootLayout({
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
+          <Footer />
           <Analytics />
           <SpeedInsights />
         </main>
