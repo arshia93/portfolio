@@ -65,13 +65,11 @@ export default function Page() {
         <li className="m-0, p-0, mx-0, px-0">
           <span className="font-medium">2012-2017</span>: I studied marketing at
           San Francisco State University and led marketing at StudySoup, a
-          college note-taking marketplace (500 Startups Batch 16).
+          college note-taking marketplace.
         </li>
         <li className="m-0, p-0, mx-0, px-0">
           <span className="font-medium">2017-2022</span>: I was the Founder and
-          Head of Product at Trym, an in-home haircut marketplace. We provided
-          thousands of haircuts, providing barbers an average of $5k/month in
-          earnings.
+          Head of Product at Trym, an in-home haircut marketplace.
         </li>
         <li className="m-0, p-0, mx-0, px-0">
           <span className="font-medium">2022-Today</span>: I've helped several
@@ -91,39 +89,6 @@ export default function Page() {
           , scratchpad, and outdoorsy.
         </li>
       </ul>
-      {/* <ul className="font-sm mt-8 flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-4 md:space-y-0 text-neutral-600 dark:text-neutral-200 ">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            target="_blank"
-            href="https://www.linkedin.com/in/arshiamog/"
-          >
-            <Image
-              src="/icons/arrow-up-right.svg"
-              width={15}
-              height={15}
-              alt="Up arrow"
-            />
-            <p className="ml-2">Connect with me</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            target="_blank"
-            href="mailto:arshiamoghaddam93@gmail.com"
-          >
-            <Image
-              src="/icons/arrow-up-right.svg"
-              width={15}
-              height={15}
-              alt="Up arrow"
-            />
-            <p className="ml-2">Email me</p>
-          </a>
-        </li>
-      </ul>
-      Built with coffee in SF/SD  */}
     </section>
   );
 }
