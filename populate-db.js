@@ -6,7 +6,7 @@ const { createClient } = require('@vercel/postgres');
 async function populateDatabase() {
   // connects to the database using the postgres url
   const client = createClient({
-    connectionString: process.env.POSTGRES_UR,
+    connectionString: process.env.POSTGRES_URL,
   });
   // connects to the database
   await client.connect();
