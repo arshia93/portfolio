@@ -2,22 +2,22 @@ import Link from 'next/link';
 import { Suspense } from 'react';
 import ViewCounter from './view-counter';
 import { getViewsCount } from 'app/db/queries';
-import { getBlogPosts } from 'app/db/blog';
+import { getPastWorks } from 'app/db/blog';
 
 export const metadata = {
-  title: 'Blog',
-  description: 'Read my thoughts on software development, design, and more.',
+  title: 'Past Work',
+  description: 'Read through my work on acquiring, activating, and retain users as a product builder.',
 };
 
-export default function BlogPage() {
-  let allBlogs = getBlogPosts();
+export default function WorkPage() {
+  let allWork = getPastWorks();
 
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        read my blog
+        read my work
       </h1>
-      {allBlogs
+      {allWork
         .sort((a, b) => {
           if (
             new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
@@ -26,18 +26,18 @@ export default function BlogPage() {
           }
           return 1;
         })
-        .map((post) => (
+        .map((work) => (
           <Link
-            key={post.slug}
+            key={work.slug}
             className="flex flex-col space-y-1 mb-4"
-            href={`/blog/${post.slug}`}
+            href={`/blog/${work.slug}`}
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {post.metadata.title}
+                {work.metadata.title}
               </p>
               <Suspense fallback={<p className="h-6" />}>
-                <Views slug={post.slug} />
+                <Views slug={work.slug} />
               </Suspense>
             </div>
           </Link>

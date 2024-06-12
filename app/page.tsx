@@ -22,14 +22,14 @@ export default function Page() {
         world.
       </p>
       <p className="prose .anchor:after prose-neutral dark:prose-invert mb-4">
-        I'm currently <Link href={'/recipes'}>building products</Link> as a
+        I'm currently <Link href={'/past-work'}>building products</Link> as a
         product manager and with friends on nights and weekends.
       </p>
       <p className="prose .anchor:after prose-neutral dark:prose-invert mb-4">
         My work includes focus on variety of product opportunities including
-        solving the <Link href={'/recipes/acquisition'}>acquisition</Link>,{' '}
-        <Link href={'/recipes/activation'}>activation</Link>, and{' '}
-        <Link href={'/recipes/retention'}>retention</Link> problem.
+        solving the <Link href={'/past-work/acquisition'}>acquisition</Link>,{' '}
+        <Link href={'/past-work/activation'}>activation</Link>, and{' '}
+        <Link href={'/past-work/retention'}>retention</Link> problem.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 my-8 mb-8">
